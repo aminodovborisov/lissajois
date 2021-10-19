@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Генератор фигур Лиссажу</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body onload="drawToCanvas()">
+        <div id="main">
+            <div id="tableData">
+                <table>
+                    <tr>
+                        <td colspan="2">Первое колебание</td>
+                    </tr>
+                    <tr>
+                        <td>Амплитуда</td>
+                        <td><input type="number" id="ampliOne" min="0" max="10" step="1" value="10" onchange="drawToCanvas()"></td>
+                    </tr>
+                    <tr>
+                        <td>Частота</td>
+                        <td><input type="number" id="freqOne" min="0" max="10" step="1" value="5" onchange="drawToCanvas()"></td>
+                    </tr>
+                    <tr>
+                        <td>Начальная фаза</td>
+                        <td><input type="number" id="phaseOne" min="0" max="90" step="10" value="0" onchange="drawToCanvas()"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Второе колебание</td>
+                    </tr>
+                    <tr>
+                        <td>Амплитуда</td>
+                        <td><input type="number" id="ampliTwo" min="0" max="10" step="1"  value="10" onchange="drawToCanvas()"></td>
+                    </tr>
+                    <tr>
+                        <td>Частота</td>
+                        <td><input type="number" id="freqTwo" min="0" max="10" step="1"  value="6" onchange="drawToCanvas()"></td>
+                    </tr>
+                    <tr>
+                        <td>Начальная фаза</td>
+                        <td><input type="number" id="phaseTwo" min="0" max="90" step="10"  value="90" onchange="drawToCanvas()"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="canvasPart">
+                <canvas id="canvasDraw" height="510" width="510"></canvas>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
