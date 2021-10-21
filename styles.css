@@ -1,8 +1,13 @@
 @media (orientation: portrait) {
+
+    * {
+        font-family: Verdana;
+    }
+
     #div-main {
+        padding-top: 2%;
         margin: 0 auto;
         width: 90vw;
-        background-color: #ff000011;
     }
 
     #table-main, #canvas-main {
@@ -10,28 +15,44 @@
         padding: 1%;
     }
 
-    table {
-        background-color: #0000ff11;
-        width: 60%;
+    #div-table, #div-canvas {
+        clear: both;
     }
 
     #canvas-main {
         display: block;
-        background-color: #000000;
+        padding: 3%;
+        background-color: black;
     }
 
     .table-content {
-        font-size: 20px;
+        font-size: 32px;
     }
 
     .table-header {
         font-weight: bold;
         text-align: center;
-        font-size: 25px;
+        font-size: 35px;
+    }
+
+    td {
+        padding: 7px 10px;
     }
 
     input {
-        width: 45px;
+        width: 80px;
+        font-size: 20px;
         margin: 0 auto;
+    }
+
+    #div-delimeter {
+        height: 3%;
+    }
+
+    .button-more-less {
+        height: 40px;
+        width: 40px;
+        font-size: 30px;
+        text-align: center;
     }
 }
