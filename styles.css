@@ -1,4 +1,37 @@
-#canvasDraw {
-    border: 0.1px solid #cccccc;
-    background-color: black
+@media (orientation: portrait) {
+    #div-main {
+        margin: 0 auto;
+        width: 90vw;
+        background-color: #ff000011;
+    }
+
+    #table-main, #canvas-main {
+        margin: 0 auto;
+        padding: 1%;
+    }
+
+    table {
+        background-color: #0000ff11;
+        width: 60%;
+    }
+
+    #canvas-main {
+        display: block;
+        background-color: #000000;
+    }
+
+    .table-content {
+        font-size: 20px;
+    }
+
+    .table-header {
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    input {
+        width: 45px;
+        margin: 0 auto;
+    }
 }

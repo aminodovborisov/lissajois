@@ -6,46 +6,56 @@
         <script type="text/javascript" src="main.js"></script>
     </head>
     <body onload="drawToCanvas()">
-        <div id="main">
-            <div id="tableData">
-                <table>
+        <div id="div-main">
+            <div id="div-table">
+                <table id="table-main">
                     <tr>
-                        <td colspan="2">Первое колебание</td>
+                        <td colspan="2" class="table-header">Первое колебание</td>
                     </tr>
                     <tr>
-                        <td>Амплитуда</td>
-                        <td><input type="number" id="ampliOne" min="0" max="10" step="1" value="10" onchange="drawToCanvas()"></td>
+                        <td class="table-content">Частота, Гц</td>
+                        <td class="table-content">
+                            <button id="lessFreqOne" onclick="lessFreqOne()">-</button>
+                            <input type="number" id="freqOne" min="0" max="20" step="1" value="5" oninput="drawToCanvas()">
+                            <button id="moreFreqOne" onclick="moreFreqOne()">+</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Частота</td>
-                        <td><input type="number" id="freqOne" min="0" max="10" step="1" value="5" onchange="drawToCanvas()"></td>
+                        <td class="table-content">Начальная фаза, °</td>
+                        <td class="table-content">
+                            <button id="lessPhaseOne" onclick="lessPhaseOne()">-</button>
+                            <input type="number" id="phaseOne" min="0" max="180" step="5" value="0" onchange="drawToCanvas()">
+                            <button id="morePhaseOne" onclick="morePhaseOne()">+</button>
+                        </td>
+
                     </tr>
                     <tr>
-                        <td>Начальная фаза</td>
-                        <td><input type="number" id="phaseOne" min="0" max="90" step="10" value="0" onchange="drawToCanvas()"></td>
+                        <td colspan="2" class="table-header">Второе колебание</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Второе колебание</td>
+                        <td class="table-content">Частота, Гц</td>
+                        <td class="table-content">
+                            <button id="lessFreqTwo" onclick="lessFreqTwo()">-</button>
+                            <input type="number" id="freqTwo" min="0" max="20" step="1"  value="6" onchange="drawToCanvas()">
+                            <button id="moreFreqTwo" onclick="moreFreqTwo()">+</button>
+                        </td>
+
                     </tr>
                     <tr>
-                        <td>Амплитуда</td>
-                        <td><input type="number" id="ampliTwo" min="0" max="10" step="1"  value="10" onchange="drawToCanvas()"></td>
-                    </tr>
-                    <tr>
-                        <td>Частота</td>
-                        <td><input type="number" id="freqTwo" min="0" max="10" step="1"  value="6" onchange="drawToCanvas()"></td>
-                    </tr>
-                    <tr>
-                        <td>Начальная фаза</td>
-                        <td><input type="number" id="phaseTwo" min="0" max="90" step="10"  value="90" onchange="drawToCanvas()"></td>
+                        <td class="table-content">Начальная фаза, °</td>
+                        <td class="table-content">
+                            <button id="lessPhaseTwo" onclick="lessPhaseTwo()">-</button>
+                            <input type="number" id="phaseTwo" min="0" max="180" step="5"  value="90" onchange="drawToCanvas()">
+                            <button id="morePhaseTwo" onclick="morePhaseTwo()">+</button>
+                        </td>
                     </tr>
                 </table>
             </div>
-            <div id="canvasPart">
-                <canvas id="canvasDraw" height="510" width="510"></canvas>
+            <div id="div-canvas">
+                <canvas id="canvas-main" height="522" width="522"></canvas>
             </div>
         </div>
 
-        
+
     </body>
 </html>
