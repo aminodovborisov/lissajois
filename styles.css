@@ -19,6 +19,10 @@
         clear: both;
     }
 
+    #div-canvas {
+        padding-top: 5%;
+    }
+
     #canvas-main {
         display: block;
         padding: 3%;
