@@ -34,8 +34,8 @@ let coordinatesOnCanvas = function() {
     for (let i = 0; i < lenPre; i++) {
         let onePoint = arrPreCoordinates[i];
         readyArray.push([
-            20 * onePoint[0] + 261,
-            20 * onePoint[1] + 261
+            25 * onePoint[0] + 305,
+            25 * onePoint[1] + 305
         ]);
     }
     return readyArray
@@ -168,7 +168,7 @@ function drawToCanvas()
     ctx.rect(0, 0, cnv.width, cnv.height);
     ctx.fill();
     let arrPoints = coordinatesOnCanvas();
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 5;
     ctx.strokeStyle = '#55d400';
     let startPoint = arrPoints[0];
     ctx.beginPath();
