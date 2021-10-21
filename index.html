@@ -7,6 +7,10 @@
     </head>
     <body onload="drawToCanvas()">
         <div id="div-main">
+            <div id="div-canvas">
+                <canvas id="canvas-main" height="610" width="610"></canvas>
+            </div>
+            <div id="div-delimeter"></div>
             <div id="div-table">
                 <table id="table-main">
                     <tr>
@@ -15,17 +19,17 @@
                     <tr>
                         <td class="table-content">Частота, Гц</td>
                         <td class="table-content">
-                            <button id="lessFreqOne" onclick="lessFreqOne()">-</button>
-                            <input type="number" id="freqOne" min="0" max="20" step="1" value="5" oninput="drawToCanvas()">
-                            <button id="moreFreqOne" onclick="moreFreqOne()">+</button>
+                            <button id="lessFreqOne" onclick="lessFreqOne()" class="button-more-less">-</button>
+                            <input type="number" id="freqOne" min="0" max="20" step="1" value="5" oninput="drawToCanvas()" readonly="true">
+                            <button id="moreFreqOne" onclick="moreFreqOne()" class="button-more-less">+</button>
                         </td>
                     </tr>
                     <tr>
                         <td class="table-content">Начальная фаза, °</td>
                         <td class="table-content">
-                            <button id="lessPhaseOne" onclick="lessPhaseOne()">-</button>
-                            <input type="number" id="phaseOne" min="0" max="180" step="5" value="0" onchange="drawToCanvas()">
-                            <button id="morePhaseOne" onclick="morePhaseOne()">+</button>
+                            <button id="lessPhaseOne" onclick="lessPhaseOne()" class="button-more-less">-</button>
+                            <input type="number" id="phaseOne" min="0" max="180" step="5" value="0" onchange="drawToCanvas()" readonly="true">
+                            <button id="morePhaseOne" onclick="morePhaseOne()" class="button-more-less">+</button>
                         </td>
 
                     </tr>
@@ -35,24 +39,21 @@
                     <tr>
                         <td class="table-content">Частота, Гц</td>
                         <td class="table-content">
-                            <button id="lessFreqTwo" onclick="lessFreqTwo()">-</button>
-                            <input type="number" id="freqTwo" min="0" max="20" step="1"  value="6" onchange="drawToCanvas()">
-                            <button id="moreFreqTwo" onclick="moreFreqTwo()">+</button>
+                            <button id="lessFreqTwo" onclick="lessFreqTwo()" class="button-more-less">-</button>
+                            <input type="number" id="freqTwo" min="0" max="20" step="1"  value="6" onchange="drawToCanvas()" readonly="true">
+                            <button id="moreFreqTwo" onclick="moreFreqTwo()" class="button-more-less">+</button>
                         </td>
 
                     </tr>
                     <tr>
                         <td class="table-content">Начальная фаза, °</td>
                         <td class="table-content">
-                            <button id="lessPhaseTwo" onclick="lessPhaseTwo()">-</button>
-                            <input type="number" id="phaseTwo" min="0" max="180" step="5"  value="90" onchange="drawToCanvas()">
-                            <button id="morePhaseTwo" onclick="morePhaseTwo()">+</button>
+                            <button id="lessPhaseTwo" onclick="lessPhaseTwo()" class="button-more-less">-</button>
+                            <input type="number" id="phaseTwo" min="0" max="180" step="5"  value="90" onchange="drawToCanvas()" readonly="true">
+                            <button id="morePhaseTwo" onclick="morePhaseTwo()" class="button-more-less">+</button>
                         </td>
                     </tr>
                 </table>
-            </div>
-            <div id="div-canvas">
-                <canvas id="canvas-main" height="522" width="522"></canvas>
             </div>
         </div>
 
